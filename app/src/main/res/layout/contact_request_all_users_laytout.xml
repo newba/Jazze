@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/request_profile_image"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:src="@drawable/userdefault" />
+
+        <LinearLayout
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/request_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="@string/nom_d_utilisateur"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/request_user_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="@string/status_d_utilisateur"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_request_ok"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:text="D'accord"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/btn_request_cancel"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:padding="5dp"
+                    android:text="Refuser"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

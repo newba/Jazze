@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="br.com.darksite.jazze.ParametresActivity">
+
+    <!-- https://github.com/hdodenhof/CircleImageView -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfiilDefault"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/userdefault" />
+
+    <TextView
+        android:id="@+id/txtNomProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfiilDefault"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/nom"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtStatusUtilisateur"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtNomProfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:focusable="auto"
+        android:gravity="center"
+        android:text="Salut! J'utilise Jazze, développé par Marcelo Santos pour le Collége de Maisonneuve"
+        android:textColor="@color/colorAccent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnChangePhotoProfil"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="117dp"
+        android:background="@color/colorAccent"
+        android:text="@string/changer_votre_photo"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnChangeStatusProfil"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorAccent"
+        android:text="@string/changer_votre_status"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+</RelativeLayout>

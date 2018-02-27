@@ -1,0 +1,73 @@
+jazze: {
+    "utilisateurs": {
+        "idUtilisateur": "String" {
+            "device_token": "String"
+			"nom_Utilisateur": "String"
+			"online": "date"
+			"user_Image": "url"
+			"user_Status": "String"
+			"user_Thumb": "url"
+        }
+		"utilisateur2": { 
+		... 
+		}
+		"utilisateur3": { 
+		... 
+		}
+	}
+	"contacts": {
+		"idUtilisateur": "String" {
+			"idUtilisateur_2": "String" {
+				"data": "date"
+			}
+		"utilisateur2": {
+			...
+			}
+		"utilisateur3": {
+			...
+			}
+		}
+	}
+			
+	"messages": {
+		"idUtilisateur": "String"{
+			"idUtilisateur2": "String"{
+				"identificateurMessage": "String"{
+					"from": "idUtilisateur"
+					"horaire": "long"
+					"message": "String"
+					"type": "text"
+					"vu": "boolean"
+					}
+				}
+			}
+		}
+				"identificateurMessage2": "String"{
+					...
+					}
+	"invitations": {
+		"idUtilisateur": "String"{
+			"idUtilisateur2": "String"{
+				"request_type": "envoyé"
+				}
+			}
+		
+		"idUtilisateur2": "String"{
+			"idUtilisateur": "String"{
+				"request_type": "reçu"
+			}
+		}
+	}
+	"notifications": {
+		"idUtilisateur": "String"{
+			"identificateurNotification": "String"{
+				"from": "idUtilisateur2"{
+				"type": "requete"
+				}
+			}
+		}
+	}
+	
+	
+					
+https://www.firebase.com/docs/android/guide/structuring-data.html			

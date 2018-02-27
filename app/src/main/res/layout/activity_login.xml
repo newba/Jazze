@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.darksite.jazze.LoginActivity">
+
+    <include layout="@layout/app_bar_layout"
+    android:id="@+id/login_toolbar"
+
+    />
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/login_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/logoapplication"
+        app:srcCompat="@drawable/jazze" />
+
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtMotDePasse"
+        android:layout_alignStart="@+id/edtMotDePasse"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="votrecourriel@email.ca"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/edtMotDePasse"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+
+</RelativeLayout>

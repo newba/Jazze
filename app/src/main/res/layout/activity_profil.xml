@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313335"
+    tools:context="br.com.darksite.jazze.ProfilActivity">
+
+    <ImageView
+        android:id="@+id/imageProfilUniqueUtilisateur"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/profil_image_default"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/userdefault" />
+
+    <TextView
+        android:id="@+id/txtNomUtilisateurProfilUnique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageProfilUniqueUtilisateur"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="@string/nom_d_utlisateur"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtStatusUtilisateurProfilUnique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtNomUtilisateurProfilUnique"
+        android:text="@string/status_d_utlisateur"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnEnvoyerInvitation"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:background="#FF145619"
+        android:text="@string/envoyer_une_invitation_de_contact"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnRefuserInvitationContatc"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/refuser_l_invitation_de_contact"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

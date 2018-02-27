@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Jazze</string>
+    <string name="logoapplication">logoApplication</string>
+    <string name="logocollegemaisonneuve">logoCollegeMaisonneuve</string>
+    <string name="bienvenueTextView">Bienvenue à l\'application de conversation du collège Maisonneuve. Profitez-en!</string>
+    <string name="txtCompteExistent">Vous avez déjà un compte?</string>
+    <string name="nouveau_compte">Nouveau compte</string>
+    <string name="login">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nom">Nom</string>
+    <string name="changer_votre_photo">Inclure / Changer votre photo</string>
+    <string name="changer_votre_status">Changer votre status</string>
+    <string name="status_d_utilisateur">Status d\'utilisateur</string>
+    <string name="nom_d_utilisateur">Nom d\'utilisateur</string>
+    <string name="status_d_utlisateur">Status d\'utlisateur</string>
+    <string name="refuser_l_invitation_de_contact">Refuser l\'invitation de contact</string>
+    <string name="envoyer_une_invitation_de_contact">Envoyer une invitation de contact</string>
+    <string name="nom_d_utlisateur">Nom d\'utlisateur</string>
+    <string name="profil_image_default">Profil image default</string>
+    <string name="text_du_message">Text du message</string>
+</resources>

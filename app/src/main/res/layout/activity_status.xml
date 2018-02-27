@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.darksite.jazze.StatusActivity">
+
+    <include
+        android:id="@+id/status_app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <EditText
+        android:id="@+id/edtStatusEdition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/status_app_bar"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Changer votre status ici"
+        android:inputType="textMultiLine"
+        android:padding="30dp" />
+
+    <Button
+        android:id="@+id/btnSaveStatus"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtStatusEdition"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorPrimary"
+        android:text="enregistrer les modifications" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.darksite.jazze.InscriptionActivity">
+
+    <include layout="@layout/app_bar_layout"
+    android:id="@+id/inscrition_toolbar"
+
+    />
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/inscrition_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/logoapplication"
+        app:srcCompat="@drawable/jazze" />
+
+    <EditText
+        android:id="@+id/edtInscriptionNom"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Entre votre nom"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/edtInscriptionEmail"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtInscriptionNom"
+        android:layout_below="@+id/edtInscriptionNom"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="votrecourriel@email.ca"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/edtInscriptionMotDePasse"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtInscriptionEmail"
+        android:layout_below="@+id/edtInscriptionEmail"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btnInscription"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="@color/colorPrimary"
+        android:text="Inscription" />
+
+</RelativeLayout>
